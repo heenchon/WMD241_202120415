@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>4주차 과제</title>
     <style>
+      .fontGray {
+        color: #585550;
+      }
+      .beige {
+        font-weight: 400;
+        font-size: 14px;
+        padding: 16px;
+        background-color: #dcccad;
+        border-radius: 8px;
+      }
       * {
         box-sizing: border-box;
+        font-weight: 400;
+        font-size: 18px;
+        background-color: #928f89;
+      }
+      body {
+        * {
+          background-color: #f1eee8;
+        }
       }
       p {
         margin-block: 8px;
@@ -16,12 +34,20 @@
         font-size: 23px;
         margin-block: 20px 8px;
       }
-      .beige {
-        font-weight: 400;
-        font-size: 14px;
-        padding: 16px;
-        background-color: #dcccad;
-        border-radius: 8px;
+      table {
+        width: 700px;
+        border-collapse: collapse;
+        text-align: start;
+        td {
+          padding-block: 4px;
+          padding-inline: 10px;
+        }
+        .tableLine {
+          border-bottom: solid #b1ada8;
+        }
+        .number {
+          text-align: end;
+        }
       }
     </style>
   </head>
@@ -32,9 +58,18 @@
       margin-inline: auto;
       margin-block: 0;
       padding: 32px;
+      color: #24211d;
+      background-color: #f1eee8;
     "
   >
-    <h1 style="font-weight: 700; font-size: 69px; padding-block: 6px">
+    <h1
+      style="
+        font-weight: 700;
+        font-size: 69px;
+        margin-block: 0;
+        padding-block: 6px;
+      "
+    >
       파스타 카르보나라
     </h1>
     <p>
@@ -45,14 +80,15 @@
         >레서피</em
       >
     </p>
-    <p style="font-weight: 400; font-size: 14px">2023.01.04</p>
+
+    <p class="fontGray" style="font-weight: 400; font-size: 14px">2023.01.04</p>
     <div style="margin-block: 24px">
       <img
         src="../../../assets/pasta-carbonara.jpg"
         alt="흰 접시 위에 담긴 카르보나라 파스타 관찰레가 같이 버무려져있다"
         style="max-width: 100%; margin-inline: auto; display: block"
       />
-      <p>사진: Chelsie Craig, 스타일링: Molly Baz</p>
+      <p class="fontGray">사진: Chelsie Craig, 스타일링: Molly Baz</p>
     </div>
     <div style="margin-block: 24px">
       <p><strong>총 소요 시간 24분</strong></p>
@@ -88,40 +124,43 @@
       받기에 도움이 됩니다.
     </p>
     <div style="margin-block: 48px">
-      <h2 style="font-weight: 700; font-size: 35px">재료</h2>
-      <p style="font-weight: 400; font-size: 14px; margin-block: 12px">
+      <h2 style="font-weight: 700; font-size: 35px; margin-block: 0">재료</h2>
+      <p
+        class="fontGray"
+        style="font-weight: 400; font-size: 14px; margin-block: 12px"
+      >
         4인분기준
       </p>
       <table>
-        <tr>
-          <td>수량</td>
+        <tr class="tableLine">
+          <td class="number">수량</td>
           <td>단위</td>
           <td>품목</td>
         </tr>
         <tr>
-          <td>3</td>
+          <td class="number">3</td>
           <td>Tbsp.</td>
           <td>코셔 소금</td>
         </tr>
         <tr>
-          <td>4</td>
+          <td class="number">4</td>
           <td>oz.</td>
           <td>
             관찰레(염장 돼지볼살) 혹은 판체타(이탈리안 베이컨) 혹은 베이컨
           </td>
         </tr>
         <tr>
-          <td>2</td>
+          <td class="number">2</td>
           <td>oz.</td>
           <td>파르마지아노 레지아노 혹은 페코리노 로마노</td>
         </tr>
         <tr>
-          <td>4</td>
+          <td class="number">4</td>
           <td></td>
           <td>대란 노른자</td>
         </tr>
         <tr>
-          <td>2</td>
+          <td class="number">2</td>
           <td></td>
           <td>대란</td>
         </tr>
@@ -131,12 +170,12 @@
           <td>막 간 후추</td>
         </tr>
         <tr>
-          <td>2</td>
+          <td class="number">2</td>
           <td>Tbsp.</td>
           <td>엑스트라 버진 올리브 오일</td>
         </tr>
         <tr>
-          <td>1</td>
+          <td class="number">1</td>
           <td>lb.</td>
           <td>스파게티 혹은 부카티니 혹은 리가토니</td>
         </tr>
