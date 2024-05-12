@@ -2,16 +2,55 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  margin: 0;
+  color: #11284b;
+}
+
+p {
+  margin: 0;
 }
 
 .font--blue {
   color: #381fd1;
 }
 
-.nav .block--wrapper {
+.font--gray {
+  color: #4b4b4e;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #381fd1;
+}
+
+.nav {
+  color: #381fd1;
+  background-color: #f6f6eb;
+  padding: 16px;
+  justify-content: space-between;
+}
+.nav p {
+  line-height: 20px;
+}
+
+.nav--block--wrapper {
   display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin-inline: auto;
 }
 
 .nav--block {
   display: flex;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.sidebar--block--contribute {
+  background-color: #f3f2fc;
 }
