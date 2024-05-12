@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.font--blue {
+  color: #381fd1;
+}
+
+.nav .block--wrapper {
+  display: flex;
+}
+
+.nav--block {
+  display: flex;
+}
