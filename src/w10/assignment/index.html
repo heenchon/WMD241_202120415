@@ -72,27 +72,75 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container--main">
       <div class="sidebar--main--wrapper">
         <div class="sidebar">
           <div class="sidebar--block--wrapper">
-            <div class="sidebar--block font--gray sidebar--block--search">
-              <p>Search Library</p>
+            <div class="sidebar--block font--gray sidebar--block--opt1">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="pointer-events-none absolute left-3 top-[42px]"
+              >
+                <title>Search</title>
+                <path
+                  d="M8.33333 13.6667C11.555 13.6667 14.1667 11.055 14.1667 7.83333C14.1667 4.61167 11.555 2 8.33333 2C5.11167 2 2.5 4.61167 2.5 7.83333C2.5 11.055 5.11167 13.6667 8.33333 13.6667Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M17.5 17L12.5 12"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <div class="search--wrapper">
+                <p>Search Library</p>
+                <div class="input"></div>
+              </div>
             </div>
             <div class="sidebar--block font--gray">Home</div>
             <div class="sidebar--block font--gray">Collections</div>
-            <div class="sidebar--block font--gray">Categories</div>
+            <div class="sidebar--block font--gray sidebar--block--opt2">
+              <p>Categories</p>
+              <svg
+                width="10"
+                height="6"
+                viewBox="0 0 10 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="ml-auto mr-5"
+              >
+                <title>Disclose arrow</title>
+                <path
+                  d="M1 1L5 5L9 1"
+                  stroke="#4B4B4E"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
             <div class="sidebar--block sidebar--block--contribute">
               <h3>Contribute to Stark</h3>
               <p>Got any accessibility resources or news?</p>
-              <p class="button">Submit a Resources</p>
+              <a class="button">Submit a Resource</a>
             </div>
           </div>
         </div>
         <div class="main">
           <div class="main--title">
             <h1>New in the Library</h1>
-            <a class="font--blue" href="/library/all/">VIEW&nbsp;&nbsp;ALL</a>
+            <a class="font--blue" href="https://www.getstark.co/library/all/"
+              >VIEW&nbsp;&nbsp;ALL</a
+            >
           </div>
           <div class="main--subtitle">
             Newly added accessibility resources, guides, and more.
@@ -118,7 +166,7 @@
                 alt="The Accessible Publishing Learning Network"
               />
               <p class="font--blue">RESOURCES</p>
-              <h3>The APLN(Accessible Publishing...</h3>
+              <h3>The APLN<br />(Accessible Publishing...</h3>
             </div>
             <div class="main--block">
               <img
@@ -129,7 +177,7 @@
                 alt="Humber College Institute of Technology and Advanced Learning"
               />
               <p class="font--blue">RESOURCES</p>
-              <h3>Making Accessible Books</h3>
+              <h3>Making <br />Accessible Books</h3>
             </div>
             <div class="main--block">
               <img
@@ -167,7 +215,11 @@
           </div>
           <div class="main--title">
             <h1>Featured Collections</h1>
-            <a class="font--blue" href="/library/all/">VIEW&nbsp;&nbsp;ALL</a>
+            <a
+              class="font--blue"
+              href="https://www.getstark.co/library/collections/"
+              >VIEW&nbsp;&nbsp;ALL</a
+            >
           </div>
           <div class="main--subtitle">
             Handpicked and curated collections around accessibility.
@@ -201,120 +253,111 @@
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="footer--block--wrapper">
-        <div class="footer--block">
-          <p class="font--bold">USE CASES</p>
-          <p>For Designers</p>
-          <p>For Developers</p>
-          <p>For Product Managers</p>
-          <p>For Compliance</p>
-          <p>Managers</p>
+    <div class="container--footer">
+      <div class="footer">
+        <div class="footer--block--wrapper">
+          <div class="footer--block">
+            <p class="font--bold">USE CASES</p>
+            <p>For Designers</p>
+            <p>For Developers</p>
+            <p>For Product Managers</p>
+            <p>For Compliance Managers</p>
+          </div>
+          <div class="footer--block">
+            <p class="font--bold">RESOURCES</p>
+            <p>Blog</p>
+            <p>Library</p>
+            <p>Release Notes</p>
+            <p>Slack Community</p>
+          </div>
+          <div class="footer--block">
+            <p class="font--bold">HELP</p>
+            <p>My Account</p>
+            <p>Support Docs</p>
+            <p>Contact Us</p>
+            <p>Feature Requests</p>
+          </div>
+          <div class="footer--block">
+            <p class="font--bold">COMPANY</p>
+            <p>Stark Framework</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Code of Conduct</p>
+          </div>
+          <div class="footer--block">
+            <p class="font--bold">SECURITY</p>
+            <p>Security Overview</p>
+            <p>Cookie Policy</p>
+            <p>GDPR</p>
+            <p>Status</p>
+          </div>
+          <div class="footer--block">
+            <p class="font--bold">DESIGN INTEGRATIONS</p>
+            <p>Stark for Figma</p>
+            <p>Stark for FigJam</p>
+            <p>Stark for Sketch</p>
+            <p>Stark for Adobe XD</p>
+          </div>
+          <div class="footer--block">
+            <p class="font--bold">DEVELOPER INTEGRATIONS</p>
+            <p>Stark for Chrome</p>
+            <p>Stark for Firefox</p>
+            <p>Stark for Edge</p>
+            <p>Stark for Safari</p>
+            <p>Stark for Arc</p>
+            <p>Stark for Brave</p>
+          </div>
         </div>
-        <div class="footer--block">
-          <p class="font--bold">USE CASES</p>
-          <p>For Designers</p>
-          <p>For Developers</p>
-          <p>For Product Managers</p>
-          <p>For Compliance</p>
-          <p>Managers</p>
-        </div>
-        <div class="footer--block">
-          <p class="font--bold">USE CASES</p>
-          <p>For Designers</p>
-          <p>For Developers</p>
-          <p>For Product Managers</p>
-          <p>For Compliance</p>
-          <p>Managers</p>
-        </div>
-        <div class="footer--block">
-          <p class="font--bold">USE CASES</p>
-          <p>For Designers</p>
-          <p>For Developers</p>
-          <p>For Product Managers</p>
-          <p>For Compliance</p>
-          <p>Managers</p>
-        </div>
-        <div class="footer--block">
-          <p class="font--bold">USE CASES</p>
-          <p>For Designers</p>
-          <p>For Developers</p>
-          <p>For Product Managers</p>
-          <p>For Compliance</p>
-          <p>Managers</p>
-        </div>
-        <div class="footer--block">
-          <p class="font--bold">USE CASES</p>
-          <p>For Designers</p>
-          <p>For Developers</p>
-          <p>For Product Managers</p>
-          <p>For Compliance</p>
-          <p>Managers</p>
-        </div>
-        <div class="footer--block">
-          <p class="font--bold">USE CASES</p>
-          <p>For Designers</p>
-          <p>For Developers</p>
-          <p>For Product Managers</p>
-          <p>For Compliance</p>
-          <p>Managers</p>
-        </div>
-        <div class="footer--block">
-          <p class="font--bold">USE CASES</p>
-          <p>For Designers</p>
-          <p>For Developers</p>
-          <p>For Product Managers</p>
-          <p>For Compliance</p>
-          <p>Managers</p>
-        </div>
-      </div>
-      <div class="footer--bottom--wrapper">
-        <div class="footer--bottom--sns">
-          <a
-            href="https://twitter.com/getstarkco"
-            target="_blank"
-            title="(opens in new tab)"
-            ><img
-              alt="Stark's Twitter account link"
-              src="https://images.getstark.co/marketing/social-media/twitter.png"
-              class="w-8"
-          /></a>
-          <a
-            href="https://www.instagram.com/getstarkco/"
-            target="_blank"
-            title="(opens in new tab)"
-            ><img
-              alt="Stark's Instagram account link"
-              src="https://images.getstark.co/marketing/social-media/instagram.png"
-              class="w-8"
-          /></a>
-          <a href="/slack/" target="_blank" title="(opens in new tab)"
-            ><img
-              alt="Stark's Slack account link"
-              src="https://images.getstark.co/marketing/social-media/slack.png"
-              class="w-8"
-          /></a>
-          <a
-            href="https://www.linkedin.com/company/getstarkco"
-            target="_blank"
-            title="(opens in new tab)"
-            ><img
-              alt="Stark's LinkedIn account link"
-              src="https://images.getstark.co/marketing/social-media/share-linkedin.webp"
-              class="w-8"
-          /></a>
-          <a
-            href="https://www.youtube.com/channel/UCnhYIgXU1GsrLnLv-NFqVNw/featured"
-            target="_blank"
-            title="(opens in new tab)"
-            ><img
-              alt="Stark's YouTube account link"
-              src="https://images.getstark.co/marketing/social-media/youtube.png"
-              class="w-8"
-          /></a>
-        </div>
-        <div class="footer--bottom--text">
-          MADE REMOTELY WITH LOVE BY STARK LAB, INC. COPYRIGHT 2023
+        <div class="footer--bottom--wrapper">
+          <div class="footer--bottom--sns">
+            <a
+              href="https://twitter.com/getstarkco"
+              target="_blank"
+              title="(opens in new tab)"
+              ><img
+                alt="Stark's Twitter account link"
+                src="https://images.getstark.co/marketing/social-media/twitter.png"
+                class="w-8"
+            /></a>
+            <a
+              href="https://www.instagram.com/getstarkco/"
+              target="_blank"
+              title="(opens in new tab)"
+              ><img
+                alt="Stark's Instagram account link"
+                src="https://images.getstark.co/marketing/social-media/instagram.png"
+                class="w-8"
+            /></a>
+            <a href="/slack/" target="_blank" title="(opens in new tab)"
+              ><img
+                alt="Stark's Slack account link"
+                src="https://images.getstark.co/marketing/social-media/slack.png"
+                class="w-8"
+            /></a>
+            <a
+              href="https://www.linkedin.com/company/getstarkco"
+              target="_blank"
+              title="(opens in new tab)"
+              ><img
+                alt="Stark's LinkedIn account link"
+                src="https://images.getstark.co/marketing/social-media/share-linkedin.webp"
+                class="w-8"
+            /></a>
+            <a
+              href="https://www.youtube.com/channel/UCnhYIgXU1GsrLnLv-NFqVNw/featured"
+              target="_blank"
+              title="(opens in new tab)"
+              ><img
+                alt="Stark's YouTube account link"
+                src="https://images.getstark.co/marketing/social-media/youtube.png"
+                class="w-8"
+            /></a>
+          </div>
+          <div class="footer--bottom--text">
+            MADE&nbsp;&nbsp; REMOTELY&nbsp;&nbsp; WITH&nbsp;&nbsp;
+            LOVE&nbsp;&nbsp; BY&nbsp;&nbsp; STARK&nbsp;&nbsp; LAB,&nbsp;
+            INC.&nbsp; COPYRIGHT&nbsp; 2023
+          </div>
         </div>
       </div>
     </div>
