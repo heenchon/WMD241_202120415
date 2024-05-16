@@ -1,0 +1,61 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.btn {
+  cursor: pointer;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  font-size: 16px;
+  line-height: 14px;
+  background-color: oklch(0.4 0.1 150);
+  color: oklch(0.9 0.1 150);
+  text-transform: capitalize;
+  border-radius: 999px;
+  margin-top: 1.25rem;
+}
+.btn--type--elevated {
+  background-color: oklch(0.9 0.025 150);
+  color: oklch(0.45 0.1 150);
+  box-shadow: 0 0.25rem 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+.btn--type--tonal {
+  background-color: oklch(0.8 0.1 150);
+  color: oklch(0.3 0.1 150);
+}
+.btn--type--outline {
+  color: oklch(0.4 0.1 150);
+  background-color: unset;
+  border: 0.025rem solid oklch(0.5 0 150);
+}
+.btn--type--text {
+  background-color: unset;
+}
+.btn--type--text:hover {
+  animation-name: rainbow;
+  animation-duration: 500ms;
+  animation-direction: alternate;
+  animation-iteration-count: 4;
+  animation-fill-mode: both;
+  background-color: unset;
+  color: oklch(1 0 150);
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: oklch(0.5, 0.2 0);
+  }
+  100% {
+    background-color: oklch(0.5, 0.2 360);
+  }
+}
